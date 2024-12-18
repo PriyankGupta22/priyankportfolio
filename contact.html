@@ -1,0 +1,171 @@
+<html>
+    <head>
+        <title>Contacts</title>
+        <style>
+            *{
+                padding: 0px;
+                margin: 0px;
+                box-sizing: border-box;
+            }
+           #container{
+            height: 200vh;
+            width: 100vw;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+           }
+           .item{
+              width:100vw;
+              height:120px;
+              background-color: black;
+              display: grid;
+              grid-template-columns: repeat(9,1fr);
+              grid-template-rows: repeat(1,1fr);
+              position:sticky;
+              z-index: 1000;
+              top: 0px;
+              gap: 5px;
+           }
+           #title{
+            color: whitesmoke;
+            display: flex;
+            padding-left: 210px;
+            align-items: center;
+            font-size: 50px;
+            font-family: 'Courier New', Courier, monospace;
+            grid-column-start: 1;
+            grid-column-end: 5;
+           }
+           #Home{
+            color: whitesmoke;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 25px;
+            grid-column-start: 5;
+            grid-column-end: 6;
+           }
+           a{
+            color: white;
+            text-decoration: none;
+            font-family: 'Courier New', Courier, monospace;
+            transition: all;
+            transition-duration: 1ms;
+           }
+           a:hover{
+            color:teal;
+            transform: scale(1.1);
+           }
+           .sub{
+            color: whitesmoke;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 25px;
+           }
+           .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .product {
+            width: 400px;
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            overflow: hidden;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: all;
+            transition-duration: 1s;
+        }
+        .product:hover{
+            transform: scale(1.05);
+            box-shadow: 0px 0px 10px;
+        }
+
+        .product img {
+            width: 100%;
+            max-height: auto;
+            max-width: 300px;
+            margin: auto;
+        }
+
+        .product h3 {
+            margin: 10px 0;
+        }
+
+        .product p {
+            color: #555;
+        }
+
+        .product button {
+            background-color: #333;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin: 10px;
+            cursor: pointer;
+            border-radius: 3px;
+        }
+
+        .product button:hover {
+            background-color: #555;
+        }
+        img{
+            width: 300px;
+        }
+        </style>
+    </head>
+    <body>
+        <div id="container">
+            <div class="item">
+                 <div class="sub0" id="title">Poly Regen</div>
+                 <div class="sub1" id="Home"><a href="Front.html#container">Home</a></div>
+                 <div class="sub"><a href="About.html">About</a></div>
+                 <div class="sub"><a href="contact.html">Shop</a></div>
+                 <div class="sub"><a href="login.html">Work</a></div>
+            </div>
+            <section class="products">
+            <div class="product">
+                <img src="bottle.webp" alt="Eco-friendly Water Bottle">
+                <h3>Eco-friendly Water Bottle</h3>
+                <p>100 Rs.</p>
+                <a href="login.html"><button>Add to Cart</button></a>
+            </div>
+            <div class="product">
+                <img src="bag.jpg" alt="Recycled Tote Bag">
+                <h3>Recycled Tote Bag</h3>
+                <p>300 Rs.</p>
+                <a href="login.html"><button>Add to Cart</button></a>
+            </div>
+            <div class="product">
+                <img src="sunglasses.webp" alt="Recycled Plastic Sunglasses">
+                <h3>Recycled Plastic Sunglasses</h3>
+                <p>75 Rs.</p>
+                <a href="login.html"><button>Add to Cart</button></a>
+            </div>
+            <div class="product">
+                <img src="phone case.webp" alt="Recycled Phone Case">
+                <h3>Recycled Phone Case</h3>
+                <p>100 Rs.</p>
+                <a href="login.html"><button>Add to Cart</button></a>
+            </div>
+            <div class="product">
+                <img src="yoga mat.webp" alt="Recycled Yoga Mat">
+                <h3>Recycled Yoga Mat</h3>
+                <p>800 Rs.</p>
+                <a href="login.html"><button>Add to Cart</button></a>
+            </div>
+            <div class="product">
+                <img src="plant pot.avif" alt="Recycled Plastic Plant Pots">
+                <h3>Recycled Plastic Plant Pots</h3>
+                <p>500 Rs.</p>
+                <a href="login.html"><button>Add to Cart</button></a>
+            </div>
+            </section>
+        </div>
+    </body>
+</html>

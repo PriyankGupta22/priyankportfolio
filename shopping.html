@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Webpage</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+
+        .hero {
+            text-align: center;
+            background-color: #e3e3e3;
+            padding: 50px 20px;
+        }
+
+        .hero h2 {
+            margin: 0 0 20px;
+        }
+
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .product {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            overflow: hidden;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .product img {
+            width: 100%;
+            height: auto;
+            max-width: 200px;
+            margin: auto;
+        }
+
+        .product h3 {
+            margin: 10px 0;
+        }
+
+        .product p {
+            color: #555;
+        }
+
+        .product button {
+            background-color: #333;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin: 10px;
+            cursor: pointer;
+            border-radius: 3px;
+        }
+
+        .product button:hover {
+            background-color: #555;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 20px;
+            margin-top: 20px;
+            margin-top: 16%;
+        }
+    </style>
+</head>
+<body>
+    <section class="products">
+        <div class="product">
+            <img src="bottle.webp" alt="Eco-friendly Water Bottle">
+            <h3>Eco-friendly Water Bottle</h3>
+            <p>$1.9</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="bag.jpg" alt="Recycled Tote Bag">
+            <h3>Recycled Tote Bag</h3>
+            <p>$19.99</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="sunglasses.webp" alt="Recycled Plastic Sunglasses">
+            <h3>Recycled Plastic Sunglasses</h3>
+            <p>$39.99</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="phone case.webp" alt="Recycled Phone Case">
+            <h3>Recycled Phone Case</h3>
+            <p>$49.99</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="yoga mat.webp" alt="Recycled Yoga Mat">
+            <h3>Recycled Yoga Mat</h3>
+            <p>$49.99</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="plant pot.avif" alt="Recycled Plastic Plant Pots">
+            <h3>Recycled Plastic Plant Pots</h3>
+            <p>$49.99</p>
+            <button>Add to Cart</button>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2024 Poly Regen. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

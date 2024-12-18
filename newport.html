@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="STYLE[1].CSS  ">
+</head>
+<body>
+    <div id="header">
+        <div class="cointain"> 
+            <nav>
+            </nav>
+            <nav>
+             <img src="images/name.jpg" class="logo" alt="">
+             <ul >
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about"> About</a></li>
+                <li><a href="#contacts">Contacts</a></li>
+             </ul>    
+            </nav>
+            <div class="header-text">
+                <p>Web Developer</p>
+                <h1>Hi,I'm <span>Priyanshu</span><br>Raj From India</h1>
+            </div>
+        </div>
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1>About Me</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum accusantium deleniti dolor molestiae ex quae soluta explicabo. Dolores, sequi debitis.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links" onclick="opentab('Skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+
+                    </div>
+                    <div class="tab-contents active-tab" id="Skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing web/App interface</li>
+                            <li><span>Web Development</span><br>web App development</li>
+                            <li><span>App Development</span><br>builidin ios apps</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents"  id="Experience">
+                        <ul>
+                            <li><span>2024-current</span><br>kiet group of institution</li>
+                            <li><span>2021-2023</span><br>school</li>
+                            <li><span>2017-2019</span><br>huhuhi</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>lokokUX</span><br>Designingkii0o-o terface</li>
+                            <li><span>ojihunt</span><br>wkjijijvelopment</li>
+                            <li><span>koihijok kok</span><br>builidin io apps</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+         </div>
+    </div>
+    <div id="contact">
+        <div class="container">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p>contact@example.com</p>
+                <p>66197932489</p>
+                <div class="social-icons">
+                    <a href="//facebook"> <i class="fab fa facebook"></i></a>
+                    <a href="//facebook"> <i class="fab fa facebook"></i></a>
+                    <a href="//facebook"> <i class="fab fa facebook"></i></a>
+                    <a href="//facebook"> <i class="fab fa facebook"></i></a>
+                </div>
+                <a href="" class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form action="">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your your email" required>
+                    <textarea name="Message" rows="6" placeholder="YOur massege"></textarea>
+                    <button type="submit" class="btn btn2"> Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+<script>
+
+var tablinks = document.getElementsByClassName("tab-links");
+var tabcontents = document.getElementsByClassName("tab-contents");
+function opentab(tabname){
+    for(tablink of tablinks){
+        tablink.classlist.remove("active-link");
+    }
+    for(tabcontent of tabcontents){
+        tabcontent.classlist.remove("active-tab");
+}
+event.currentTarget.classlist.add("active-link");
+document.getElementById().classList.add("active-tab");
+
+}
+
+
+
+
+
+
+
+
+
+    
+</script>
+</body>
+</html>

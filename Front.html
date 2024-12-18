@@ -1,0 +1,399 @@
+<html>
+    <head>
+        <title>Poly Regen</title>
+        <style>
+            *{
+                padding: 0px;
+                margin: 0px;
+                box-sizing: border-box;
+            }
+           #container{
+            height: 600vh;
+            width: 100vw;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+           }
+           .item{
+              width:100vw;
+              height:120px;
+              background-color: black;
+              display: grid;
+              grid-template-columns: repeat(9,1fr);
+              grid-template-rows: repeat(1,1fr);
+              position:sticky;
+              top: 0px;
+              z-index: 1000;
+              gap: 5px;
+           }
+           #title{
+            color: whitesmoke;
+            display: flex;
+            padding-left: 210px;
+            align-items: center;
+            font-size: 50px;
+            font-family: 'Courier New', Courier, monospace;
+            grid-column-start: 1;
+            grid-column-end: 5;
+           }
+           #Home{
+            color: whitesmoke;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 25px;
+            grid-column-start: 5;
+            grid-column-end: 6;
+           }
+           a{
+            color: white;
+            text-decoration: none;
+            font-family: 'Courier New', Courier, monospace;
+            transition: all;
+            transition-duration: 1ms;
+           }
+           a:hover{
+            color:teal;
+            transform: scale(1.1);
+           }
+           .sub{
+            color: whitesmoke;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 25px;
+           }
+           img{
+            width: 100vw;
+            height: 120vh;
+            border: 1px solid white;
+            box-sizing: border-box;
+            padding: 0px;
+            margin: 0px;
+           }
+           .content{
+            padding-top: 100px;
+            width: 1200px;
+            height: 325vh;
+            display: grid;
+            background-color: white;
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: repeat(6,1fr);
+            row-gap: 10px;
+            column-gap: 20px;
+           }
+           .items{
+              padding-bottom: 60px;
+           }
+           #item2{
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              flex-direction: column;
+           }
+           #item1{
+            background-color: white;
+           }
+           .content1{
+            color: rgb(0, 114, 114);
+            padding-top: 10px;
+            padding-bottom: 10px;
+            font-size: 40px;
+           }
+           .content2{
+            padding:25px;
+            font-size: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 10px;
+           }
+           .content3{
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+           }
+           .img1{
+            height: 100px;
+            width: 100px;
+            border-radius: 100px;
+            border: 2px solid teal;
+            box-shadow: 0px 0px 10px black;
+            transition: all;
+            transition-duration: 0.5s;
+           }
+           .img1:hover{
+            transform: rotate(360deg);
+           }
+           .img2{
+               height: 320px;
+               width: 600px; 
+               box-shadow: 0px 0px 15px black;
+               border-radius: 0.25cm;
+               transition: all;
+               transition-duration:1.3s;
+           }    
+           .img2:hover{
+            transform: scale(1.05);
+           }
+           @media (max-width:650px)
+           {
+            .content{
+            width: 600px;
+            height: 500vh;
+            display: grid;
+            background-color: white;
+            grid-template-columns: repeat(1,1fr);
+            grid-template-rows: repeat(12,1fr);
+            row-gap: 30px;
+           }
+           }  
+           .bar{
+            width: 100vw;
+            height: 80px;
+            background: radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, rgb(0, 0, 0) 99.4%);
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 60px;
+            color: white;
+            padding-top: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+           }
+           .flip{
+            width:100vw;
+            height:600px;
+            background-color: white;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            
+           }
+           .outer{
+            padding-top: 45px;
+           }
+           .box{
+            height: 450px;
+            width:400px;
+            background-color:#f5f5f5;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 10px;
+            transition: all;
+            transition-duration: 2s;
+           }
+           .box:hover{
+            transform: translateY(-50px);
+           }
+           
+           .picture1{
+            height: 150px;
+            width: 150px;
+            transition: all;
+            transition-duration: 1s;
+            border: 1px solid #f5f5f5;
+           }
+           .picture1:hover{
+            transform: rotateY(180deg);
+           }
+           .name{
+            height:75px;
+            width:300px;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 60px;
+            color: teal;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+           }
+           .about{
+            height:150px;
+            width:350px;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            
+           }
+           .headingR{
+            width: 100vw;
+            height: 80px;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 60px;
+            color: teal;
+            padding-top:200px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+           }
+           .con{
+            height: 200px;
+            width: 100vw;
+            background-color: black;
+            border: 1px solid white;
+           }
+        </style>
+    </head>
+    <body>
+        <div id="container">
+            <div class="item">
+                 <div class="sub0" id="title">Poly Regen</div>
+                 <div class="sub1" id="Home"><a href="#container">Home</a></div>
+                 <div class="sub"><a href="about.html">About</a></div>
+                 <div class="sub"><a href="contact.html">Shop</a></div>
+                 <div class="sub"><a href="login.html">Work</a></div>
+            </div>
+            <div class="picture">
+                    <img src="recycle image.jpeg" alt="RecycleImage">
+            </div>
+            <div class="bar">
+                 <div><b>Things which you can Recycle</b></div>
+            </div>
+            <div class="content">
+               <div class="items" id="item2">
+                   <div class="content1">Plastic Bottles</div>
+                   <div class="content2">
+                       <p>Plastic bottles can be made up of Polyethylene Terephthalate (PET),</p><p>High-Density Polyethylene (HDPE),
+                       <p>Low-Density Polyethylene (LDPE) PS and PP Polypropylene.</p>
+                       <p>Only 9% of all plastic produced is recycled.</p>
+                       <p>So help us in increasing this percent by clicking on the link.</p>
+                   </div>
+                   <div class="content3">
+                       <div><a href="recycle.html"><img class="img1" src="plasticbottle.png" alt="P_bottle"></a></div>
+                   </div>
+               </div>
+               <div class="items" id="item1">
+                   <img class="img2" src="plastic.png" alt="PlasticBottle">
+               </div>
+               <div class="items" id="item1">
+                   <img class="img2" src="cans.png" alt="AluminiumCan">
+               </div>
+               <div class="items" id="item2">
+                   <div class="content1">Aluminium Cans</div>
+                   <div class="content2">
+                       <p>Aluminum can, which is commonly known as the tin can,</p>
+                       <p>is basically made up of the chemical element, aluminum.</p>
+                       <p> It is used for packaging purposes.</p>
+                       <p>So help us in reducing Aluminum Waste by clicking on the link.</p>
+                   </div>
+                   <div class="content3">
+                       <div><a href="recycle.html"><img class="img1" src="AlumCan.png" alt="Can"></a></div>
+                   </div>
+               </div>
+               <div class="items" id="item2">
+                   <div class="content1">Glass Bottles</div>
+                   <div class="content2">
+                       <p>Glass bottles are made up of glass.</p>
+                       <p> They are used to store liquid to solid products like wines, jams etc.</p>
+                       <p>These types of bottles are utilitarian.</p>
+                       <p>So help us in reducing Glass Bottle Waste by clicking on the link.</p>
+                   </div>
+                   <div class="content3">
+                       <div><a href="recycle.html"><img class="img1" src="GlassIcon.png" alt="GlassIcon"></a></div>
+                   </div>
+               </div>
+               <div class="items" id="item1">
+                   <img class="img2" src="glass.png" alt="GlassBottle">
+               </div>
+               <div class="items" id="item1">
+                   <img class="img2" src="cardboard.png" alt="Carton">
+               </div>
+               <div class="items" id="item2">
+                   <div class="content1">Cartons</div>
+                   <div class="content2">
+                       <p>They are made up of paperboard or corrugated fiberboard. </p>
+                       <p>There are many types of cartons used in packing like</p>
+                       <p> folding cartons, egg cartons, aseptic cartons and gable top cartons.</p>
+                       <p>So help us in reducing Carton Waste by clicking on the link.</p>
+                   </div>
+                   <div class="content3">
+                       <div><a href="recycle.html"><img class="img1" src="CartonIcon.png" alt="CartonIcon"></a></div>
+                   </div>
+               </div>
+               <div class="items" id="item2">
+                   <div class="content1">Leftover Food</div>
+                   <div class="content2">
+                       <p>Food is basically the most primary need for the human being existence</p>
+                       <p>Despite the fact, millions of tons of food are thrown into the garbage</p>
+                       <p>from household as well as commercial settings.</p>
+                       <p>So help us in using Leftover food in good way by clicking on the link.</p>
+                   </div>
+                   <div class="content3">
+                       <div><a href="recycle.html"><img class="img1" src="Leftovers.png" alt="LeftOver_Food"></a></div>
+                   </div>
+               </div>
+               <div class="items" id="item1">
+                   <img class="img2" src="leftover.jpeg" alt="leftover_food">
+               </div>
+               <div class="items" id="item1">
+                   <img class="img2" src="paper.png" alt="Paper">
+               </div>
+               <div class="items" id="item2">
+                   <div class="content1">Papers</div>
+                   <div class="content2">
+                       <p>Around 26% of global landfill waste consists of</p>
+                       <p>paper, despite most of it being recyclable.</p>
+                       <p>Recycled paper production uses 30% less energy than new paper.</p>
+                       <p>So help us in reducing paper waste by clicking on the link.</p>
+                   </div>
+                   <div class="content3">
+                       <div><a href="recycle.html"><img class="img1" src="PaperIcon.png" alt="PaperIcon"></a></div>
+                   </div>
+               </div>
+           </div>
+           <div class="headingR">
+                <b>The three R's of Recycling</b>
+           </div>
+                <div class="outer">
+                   <div class="flip">
+                     <div class="box" id="box1">
+                        <div><img class="picture1" src="Reduce.png" alt="Reduce"></div>
+                        <div class="name">Reduce</div>
+                        <div class="about">
+                           <p>“Reducing” means using less</p>
+                           <p>It is about cutting down on</p>
+                           <p>from the start.</p>
+                           <p>“Reduce” means not buying too </p>
+                           <p>things in the first place.</p>
+                        </div>
+                     </div>
+                     <div class="box" id="box2">
+                        <div><img class="picture1" src="Reuse.png" alt="Reuse"></div>
+                        <div class="name">Reuse</div>
+                        <div class="about">
+                           <p>“Reusing” means using things</p>
+                           <p>again instead of throwing</p>
+                           <p>them away.There are a lot of</p>
+                           <p>creative ways that can reuse</p>
+                           <p>anything in your household.</p>
+                        </div>
+                     </div>
+                     <div class="box" id="box3">
+                        <div><img class="picture1" src="Recycle.png" alt="Recycle"></div>
+                        <div class="name">Recycle</div>
+                        <div class="about">
+                           <p>“Recycling” is the process of</p>
+                           <p>collecting and processing</p>
+                           <p>materials like paper,plastic,</p>
+                           <p>and glass so they can be</p>
+                           <p>turned into new products</p>
+                        </div>
+                     </div>
+                   </div>
+                </div>
+                <div class="con">
+
+                </div>
+         </div>
+        </div>   
+    </body>
+</html>

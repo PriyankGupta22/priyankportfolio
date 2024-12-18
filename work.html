@@ -1,0 +1,78 @@
+<html>
+    <head>
+        <title>Work with us</title>
+        <style>
+            *{
+                padding: 0px;
+                margin: 0px;
+                box-sizing: border-box;
+            }
+           #container{
+            height: 600vh;
+            width: 100vw;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+           }
+           .item{
+              width:100vw;
+              height:70px;
+              background-color: black;
+              display: grid;
+              grid-template-columns: repeat(9,1fr);
+              grid-template-rows: repeat(1,1fr);
+              position:sticky;
+              top: 0px;
+              gap: 5px;
+           }
+           #title{
+            color: whitesmoke;
+            display: flex;
+            padding-left: 210px;
+            align-items: center;
+            font-size: 50px;
+            font-family: 'Courier New', Courier, monospace;
+            grid-column-start: 1;
+            grid-column-end: 5;
+           }
+           #Home{
+            color: whitesmoke;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 25px;
+            grid-column-start: 5;
+            grid-column-end: 6;
+           }
+           a{
+            color: white;
+            text-decoration: none;
+            font-family: 'Courier New', Courier, monospace;
+            transition: all;
+            transition-duration: 1ms;
+           }
+           a:hover{
+            color:teal;
+            transform: scale(1.1);
+           }
+           .sub{
+            color: whitesmoke;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 25px;
+           }
+        </style>
+    </head>
+    <body>
+        <div id="container">
+            <div class="item">
+                 <div class="sub0" id="title">Poly Regen</div>
+                 <div class="sub1" id="Home"><a href="Front.html#container">Home</a></div>
+                 <div class="sub"><a href="About.html">About</a></div>
+                 <div class="sub"><a href="Contact.html">Contact</a></div>
+                 <div class="sub"><a href="Work.html">Work</a></div>
+            </div>
+        </div>
+    </body>
+</html>

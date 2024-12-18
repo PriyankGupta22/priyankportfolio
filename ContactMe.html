@@ -1,0 +1,251 @@
+<html>
+    <head>
+        <title>ContactUs</title>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            .container{
+                width: 100vw;
+                height: 100vh;
+            }
+            .header{
+                width: 100vw;
+                height: 100px;
+                background-color: #2a3c4d;
+                display: flex;
+                align-items: center;
+            }
+            .block{
+                height: 100px;
+                width: 400px;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+            
+            }
+            #home{
+                text-decoration: none;
+                color: white;
+                
+                font-size: 40px;
+            }
+            .h{
+                margin-left: 100px;
+            }
+            .Home{
+                transition: all;
+                transition-duration:0.5s;
+            }
+            .Home:hover{
+                transform: scale(1.2);
+            }
+            .content{
+                width: 100vw;
+                height: 550px;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                /* height: 88px; */
+                
+            }
+            .footer{
+                width: 100vw;
+                height: 78px;
+                background-color: #2a3c4d;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+            }
+            .left{
+                width:50vw;
+                height: 550px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+            .right{
+                width:50vw;
+                height: 550px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                
+            }
+            #con{
+                font-size: 40px;
+            }
+            .Con{
+                margin-left: 80px;
+                font-size: 20px;
+            }
+            .box{
+                height:450px;
+                width:450px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                box-shadow: 0px 0px 20px #2a3c4d;
+                border-radius: 0.25cm;
+            }
+            .r1{
+                color: white;
+                margin: 17px;
+                transition: all;
+                transition-duration: 1s;
+            }
+            .r1:hover{
+                transform: scale(1.6);
+            }
+            .r2{
+                color: white;
+                margin: 25px;
+                transition: all;
+                transition-duration: 1s;
+            }
+            .r2:hover{
+                transform: scale(1.6);
+            }
+            .r3{
+                color: white;
+                margin: 30px;
+                transition: all;
+                transition-duration: 1s;
+            }
+            .r3:hover{
+                transform: scale(1.6);
+            }
+            #linked{
+                border-radius: 5px;
+            }
+            #box2{
+                flex-direction: row;
+            }
+            .r3{
+                margin: 5px;
+            }
+            .r4{
+                margin: 5px;
+                color: #f5f5f5;
+            }
+            #box3{
+                flex-direction: row;
+            }
+            #mail{
+                margin: 20px;
+                transition: all;
+                transition-duration: 1s;
+            }
+            #mail:hover{
+                transform: scale(1.6);
+            }
+            .imag{
+                color: white;
+            }
+            #l2{
+                height: 100px;
+                width:400px;
+                display: flex;
+                flex-direction: column;
+            }
+            .l2{
+                height: 30px;
+                width:400px;
+                display: flex;
+                align-items: center;
+            }
+            .l1{
+                height: 80px;
+                width:400px;
+                display: flex;
+                align-items: center;
+            }
+            .l3{
+                height: 30px;
+                width:400px;
+                display: flex;
+                flex-direction: row;
+            }
+            .l4{
+                height: 70px;
+                width:400px;
+                display: flex;
+                flex-direction: row;
+            }
+            .l5{
+                width: 200px;
+                display: flex;
+                align-items: center;
+            }
+            .l6{
+                width:200px;
+                display: flex;
+                align-items: center;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+             <div class="header">
+                <div class="h"><a id="home" href="portfolio.html"><p class="Home">Home</p></a></div>
+             </div>
+             <div class="content">
+                 <div class="left">
+                    <p class="Con" id="con">Contact Me</p></br></br>
+                    <p class="Con">Want to contact me? Either fill out the form with your</p>
+                    <p class="Con">inquiry or find my email below.</p>
+                 </div>
+                 <div class="right">
+                    <form>
+                        <div class="box">
+                             <div class="l1" id="l2">
+                                  <div class="l3">
+                                       <div class="l5">First Name</div>
+                                       <div class="l5">Last Name</div>
+                                  </div>
+                                  <div class="l4">
+                                    <div class="l6"><input type="text" name="fname" style="font-size:18pt;height:70px;width:190px;"></div>
+                                    <div class="l6"><input type="text" name="lname" style="font-size:18pt;height:70px;width:200px;"></div>
+                                  </div>
+                             </div>
+                             <div class="l2">Email</div>
+                             <div class="l1"><input type="text" name="email" style="font-size:18pt;height:80px;width:400px;"></div>
+                             <div class="l2">what can I help you with?</div>
+                             <div class="l1"><input type="text" name="lname" style="font-size:18pt;height:80px;width:400px;"></div>
+                             <div class="l1"><button style="font-size:18pt;height:40px;width:100px;">Submit</button></div>
+                        </div>
+                    </form>
+                 </div>
+             </div>
+             <div class="footer">
+                <div class="block" id="box1">
+                    <div class="r3"><img src="phone.png" height="29px" width="29px"></div>
+                    <div class="r4">8756006374</div>
+                 </div>
+                 <div class="block" id="box2">
+                    <div class="r1">
+                        <a href=""><img id="linked" src="LinkedIn.png" height="19px" width="19px" ></a>
+                    
+                    </div>
+                    <div class="r2">
+                        <a href=""><img id="github" src="github.png" height="27px" width="27px" ></a>
+                        
+                    </div>
+                    <div class="r3">
+                        <a href=""><img id="insta" src="insta.png" height="23px" width="30px" ></a>
+                    </div>
+                 </div>
+                 <div class="block" id="box3">
+                    <img id="mail" src="mail.png" height="23px" width="23px" >
+                    <div class="imag">gsanu8092@gmail.com</div>
+                 </div>
+             </div>
+        </div>
+    </body>
+</html>

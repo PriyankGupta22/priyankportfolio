@@ -1,0 +1,195 @@
+<html>
+    <head>
+        <title>New Style For Webpage</title>
+        <style>
+            *{
+                padding: 0;
+                margin: 0;
+                box-sizing: border-box;
+            }
+           .container{
+            height: 300vh;
+            width: 100vw;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            padding-top: 200px;
+           }
+           .content{
+            width: 1200px;
+            height: 250vh;
+            display: grid;
+            background-color: white;
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: repeat(6,1fr);
+            row-gap: 10px;
+            /* border-radius: 0.75cm; */
+           }
+           .items{
+              
+           }
+           #item2{
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              flex-direction: column;
+           }
+           #item1{
+            background-color: white;
+           }
+           .content1{
+            color: rgb(0, 114, 114);
+            padding-top: 10px;
+            padding-bottom: 10px;
+            font-size: 40px;
+           }
+           .content2{
+            padding:25px;
+            font-size: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 10px;
+           }
+           .content3{
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+           }
+           .img1{
+            height: 100px;
+            width: 100px;
+            border-radius: 100px;
+            border: 2px solid teal;
+            box-shadow: 0px 0px 10px black;
+            transition: all;
+            transition-duration: 0.5s;
+           }
+           .img1:hover{
+            transform: rotate(360deg);
+           }
+           .img2{
+               height: 320px;
+               width: 600px; 
+               box-shadow: 0px 0px 15px black;
+               border-radius: 0.25cm;
+               transition: all;
+               transition-duration:2s;
+           }    
+           .img2:hover{
+            transform: scale(1.05);
+           }
+           @media (max-width:650px)
+           {
+            .content{
+            width: 600px;
+            height: 500vh;
+            display: grid;
+            background-color: white;
+            grid-template-columns: repeat(1,1fr);
+            grid-template-rows: repeat(12,1fr);
+            row-gap: 30px;
+           }
+           }  
+           
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="content">
+                <div class="items" id="item2">
+                    <div class="content1">Plastic Bottles</div>
+                    <div class="content2">
+                        <p>Plastic bottles can be made up of Polyethylene Terephthalate (PET),</p><p>High-Density Polyethylene (HDPE),
+                        <p>Low-Density Polyethylene (LDPE) PS and PP Polypropylene.</p>
+                        <p>Only 9% of all plastic produced is recycled.</p>
+                        <p>So help us in increasing this percent by clicking on the link.</p>
+                    </div>
+                    <div class="content3">
+                        <div><a href="plastic.html"><img class="img1" src="plasticbottle.png" alt="P_bottle"></a></div>
+                    </div>
+                </div>
+                <div class="items" id="item1">
+                    <img class="img2" src="plastic.png" alt="PlasticBottle">
+                </div>
+                <div class="items" id="item1">
+                    <img class="img2" src="cans.png" alt="AluminiumCan">
+                </div>
+                <div class="items" id="item2">
+                    <div class="content1">Aluminium Cans</div>
+                    <div class="content2">
+                        <p>Aluminum can, which is commonly known as the tin can,</p>
+                        <p>is basically made up of the chemical element, aluminum.</p>
+                        <p> It is used for packaging purposes.</p>
+                        <p>So help us in reducing Aluminum Waste by clicking on the link.</p>
+                    </div>
+                    <div class="content3">
+                        <div><a href="AluminumCan.html"><img class="img1" src="AlumCan.png" alt="Can"></a></div>
+                    </div>
+                </div>
+                <div class="items" id="item2">
+                    <div class="content1">Glass Bottles</div>
+                    <div class="content2">
+                        <p>Glass bottles are made up of glass.</p>
+                        <p> They are used to store liquid to solid products like wines, jams etc.</p>
+                        <p>These types of bottles are utilitarian.</p>
+                        <p>So help us in reducing Glass Bottle Waste by clicking on the link.</p>
+                    </div>
+                    <div class="content3">
+                        <div><a href="Glass.html"><img class="img1" src="GlassIcon.png" alt="GlassIcon"></a></div>
+                    </div>
+                </div>
+                <div class="items" id="item1">
+                    <img class="img2" src="glass.png" alt="GlassBottle">
+                </div>
+                <div class="items" id="item1">
+                    <img class="img2" src="cardboard.png" alt="Carton">
+                </div>
+                <div class="items" id="item2">
+                    <div class="content1">Cartons</div>
+                    <div class="content2">
+                        <p>They are made up of paperboard or corrugated fiberboard. </p>
+                        <p>There are many types of cartons used in packing like</p>
+                        <p> folding cartons, egg cartons, aseptic cartons and gable top cartons.</p>
+                        <p>So help us in reducing Carton Waste by clicking on the link.</p>
+                    </div>
+                    <div class="content3">
+                        <div><a href="Carton.html"><img class="img1" src="CartonIcon.png" alt="CartonIcon"></a></div>
+                    </div>
+                </div>
+                <div class="items" id="item2">
+                    <div class="content1">Leftover Food</div>
+                    <div class="content2">
+                        <p>Food is basically the most primary need for the human being existence</p>
+                        <p>Despite the fact, millions of tons of food are thrown into the garbage</p>
+                        <p>from household as well as commercial settings.</p>
+                        <p>So help us in using Leftover food in good way by clicking on the link.</p>
+                    </div>
+                    <div class="content3">
+                        <div><a href="leftover.html"><img class="img1" src="Leftovers.png" alt="LeftOver_Food"></a></div>
+                    </div>
+                </div>
+                <div class="items" id="item1">
+                    <img class="img2" src="leftover.jpeg" alt="leftover_food">
+                </div>
+                <div class="items" id="item1">
+                    <img class="img2" src="paper.png" alt="Paper">
+                </div>
+                <div class="items" id="item2">
+                    <div class="content1">Papers</div>
+                    <div class="content2">
+                        <p>Around 26% of global landfill waste consists of</p>
+                        <p>paper, despite most of it being recyclable.</p>
+                        <p>Recycled paper production uses 30% less energy than new paper.</p>
+                        <p>So help us in reducing paper waste by clicking on the link.</p>
+                    </div>
+                    <div class="content3">
+                        <div><a href="plastic.html"><img class="img1" src="PaperIcon.png" alt="PaperIcon"></a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

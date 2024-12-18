@@ -1,0 +1,353 @@
+<html>
+    <head>
+        <title>Recycle Items</title>
+        <style>
+            *{
+                padding: 0px;
+                margin: 0px;
+                box-sizing: border-box;
+            }
+           #container{
+            height: 110vh;
+            width: 100vw;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+           }
+           .item{
+              width:100vw;
+              height:120px;
+              background-color: black;
+              display: grid;
+              grid-template-columns: repeat(9,1fr);
+              grid-template-rows: repeat(1,1fr);
+              position:sticky;
+              z-index: 1000;
+              top: 0px;
+              gap: 5px;
+           }
+           #title{
+            color: whitesmoke;
+            display: flex;
+            padding-left: 210px;
+            align-items: center;
+            font-size: 50px;
+            font-family: 'Courier New', Courier, monospace;
+            grid-column-start: 1;
+            grid-column-end: 5;
+           }
+           #Home{
+            color: whitesmoke;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 25px;
+            grid-column-start: 5;
+            grid-column-end: 6;
+           }
+           a{
+            color: white;
+            text-decoration: none;
+            font-family: 'Courier New', Courier, monospace;
+            transition: all;
+            transition-duration: 1ms;
+           }
+           a:hover{
+            color:teal;
+            transform: scale(1.1);
+           }
+           .sub{
+            color: whitesmoke;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 25px;
+           }
+           .process{
+             margin-top: 60px;
+             width: 100vw;
+             height: 400px;
+             display: flex;
+             flex-direction: row;
+             justify-content: center;
+             align-items: center;
+           }
+           .box{
+            height: 300px;
+            width:270px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            transition: all;
+            transition-duration: 1s;
+           }
+           .box:hover{
+            transform: translateY(20px);
+           }
+           .box1{
+            height: 300px;
+            width:40px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            background-color: white;
+           }
+           #arrow{
+             height: 40px;
+             width: 40px;
+           }
+           .b1{
+             height: 150px;
+             width: 270px;
+             display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            background-color: white;
+           }
+           .b2{
+             height:150px;
+             width:270px;
+             display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            background-color: white;
+           }
+           #down{
+            margin-top: 90px;
+           }
+           #pic1{
+             background-color: rgb(178, 207, 178);
+           }
+           #text1{
+             background-color: rgb(178, 207, 178);
+           }
+           #pic2{
+             background-color: rgb(255, 217, 147);
+           }
+           #text2{
+             background-color: rgb(255, 217, 147);
+           }
+           #pic3{
+             background-color: rgb(212, 185, 232);
+           }
+           #text3{
+             background-color: rgb(212, 185, 232);
+           }
+           #pic4{
+             background-color: rgb(255, 207, 255);
+           }
+           #text4{
+             background-color: rgb(255, 207, 255);
+           }
+           #pic5{
+             background-color: rgb(182, 237, 237);
+           }
+           #text5{
+             background-color: rgb(182, 237, 237);
+           }
+           #sp1{
+            height: 250px;
+            width: 250px;
+            margin-top: 25px;
+            margin-right: 5px;
+           }
+           #sp2{
+            height: 200px;
+            width: 200px;
+            margin-top: 18px;
+           }
+           #sp3{
+            height: 150px;
+            width: 150px;
+            margin-top: 15px;
+           }
+           
+           #sp4{
+            height: 150px;
+            width: 150px;
+            margin-top: 1px;
+           }
+           #sp5{
+            height: 130px;
+            width: 130px;
+            margin-top: 11px;
+           }
+           #n{
+            font-size:30px;
+            font-family: 'Courier New', Courier, monospace;
+           }
+           .h3{
+            color: green;
+           }
+           .h4{
+            color: orange;
+           }
+           .h5{
+            color: indigo;
+           }
+           .h6{
+            color: palevioletred;
+           }
+           .h7{
+            color: teal;
+           }
+           .heading{
+            height: 70px;
+            width: 90vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: teal;
+            font-family: 'Courier New', Courier, monospace;
+            font-size:80px;
+            margin-top: 80px;
+            text-shadow: 0px 0px 5px;
+           }
+           .card-grid {
+                    display: grid;
+                    grid-template-columns: repeat(3, 1fr); 
+                    gap: 50px;
+                    padding: 20px;
+                    max-width: 1200px;
+                    width: 100%;
+                    margin-top: 100px;
+                    margin: auto;
+                  }
+                  .card {
+                    background: #ffffff;
+                    border-radius: 10px;
+                    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                    overflow: hidden;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    height: 300px;
+                    transition: transform 1s ease, box-shadow 1s ease;
+                  }
+                  .card:hover {
+                    transform: translateY(-10px); 
+                    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); 
+                  }
+                  .placeholder {
+                    width: 90%;
+                    height: 90%;
+                    border: 2px dashed #aaa;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: #f0f0f0;
+                    color: #666;
+                    font-size: 1.2em;
+                    transition: background-color 1s ease, color 1s ease;
+                  }
+                  .card:hover .placeholder {
+                    background-color: #e0e0e0; 
+                    color: #333; 
+                  }
+                  @media (max-width: 768px) {
+                    .card-grid {
+                      grid-template-columns: 1fr; 
+                    }
+                  }
+                  .heading1{
+                    height: 70px;
+            width: 90vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: teal;
+            font-family: 'Courier New', Courier, monospace;
+            font-size:80px;
+            margin-bottom: 75px;
+            text-shadow: 0px 0px 5px;margin: auto;
+                  }
+        </style>
+    </head>
+    <body>
+        <div id="container">
+            <div class="item">
+                 <div class="sub0" id="title">Poly Regen</div>
+                 <div class="sub1" id="Home"><a href="Front.html#container">Home</a></div>
+                 <div class="sub"><a href="About.html">About</a></div>
+                 <div class="sub"><a href="contact.html">shop</a></div>
+                 <div class="sub"><a href="login.html">Work</a></div>
+            </div>
+            <div>
+                <div class="heading">
+                    Recycling process
+                </div>
+            </div>
+            <div class="process">
+                <div class="box" id="down">
+                    <div class="b1" id="pic1"><img id="sp1"src="z1.png"></div>
+                    <div class="b2" id="text1">
+                        <div class="h3" id="n">Become Member</div>
+                        <div class="h2" id="n1"></div>
+                    </div>
+                </div>
+                <div class="box1" id="box"><img id="arrow" src="arrow.png"></div>
+                <div class="box" id="up">
+                    <div class="b1" id="pic2"><img id="sp2"src="z2.png"></div>
+                    <div class="b2" id="text2">
+                        <div class="h4" id="n">Collection</div>
+                        <div class="h2" id="n1"></div>
+                    </div>
+                </div>
+                <div class="box1" id="box"><img id="arrow" src="arrow.png"></div>
+                <div class="box" id="down">
+                    <div class="b1" id="pic3"><img id="sp3"src="z4.png"></div>
+                    <div class="b2" id="text3">
+                        <div class="h5" id="n">Workspace</div>
+                        <div class="h2" id="n1"></div>
+                    </div>
+                </div>
+                <div class="box1" id="box"><img id="arrow" src="arrow.png"></div>
+                <div class="box" id="up">
+                    <div class="b1" id="pic4"><img id="sp4"src="z5.png"></div>
+                    <div class="b2" id="text4">
+                        <div class="h6" id="n">Manufacturing</div>
+                        <div class="h2" id="n1"></div>
+                    </div>
+                </div>
+                <div class="box1" id="box"><img id="arrow" src="arrow.png"></div>
+                <div class="box" id="down">
+                    <div class="b1" id="pic5"><img id="sp5"src="z3.png"></div>
+                    <div class="b2" id="text5">
+                        <div class="h7" id="n">Products</div>
+                        <div class="h2" id="n1"></div>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div>
+                <div class="heading1">
+                    Add Items
+                </div>
+            </div>
+            <div class="card-grid">
+                  <div class="card">
+                    <div class="placeholder"><a href="login.html"><img class="img2" src="plastic.png" alt="PlasticBottle"></a></div>
+                  </div>
+                  <div class="card">
+                    <div class="placeholder"><a href="login.html"><img class="img2" src="cans.png" alt="AluminiumCan"></a></div>
+                  </div>
+                  <div class="card">
+                    <div class="placeholder"><a href="login.html"><img class="img2" src="glass.png" alt="GlassBottle"></a></div>
+                  </div>
+                  <div class="card">
+                    <div class="placeholder"><a href="login.html"><img class="img2" src="cardboard.png" alt="Carton"></a></div>
+                  </div>
+                  <div class="card">
+                    <div class="placeholder"><a href="login.html"><img class="img2" src="leftover.jpeg" alt="leftover_food"></a></div>
+                  </div>
+                  <div class="card">
+                    <div class="placeholder"><a href="login.html"><img class="img2" src="paper.png" alt="Paper"></a></div>
+                  </div>
+        </div>
+    </body>
+</html>

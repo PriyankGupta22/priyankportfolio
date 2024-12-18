@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>Simple Interest</title>
+        
+            <script language="javascript">
+                function Interest(){
+                   var p,r,t,ans;
+                   p=parseInt(document.CalculateInt.Principle.value);
+                   r=parseInt(document.CalculateInt.Rate.value);
+                   t=parseInt(document.CalculateInt.Time.value);
+                   ans=(p*r*t)/100;
+                   document.CalculateInt.Answer.value=ans;
+                }
+            </script>
+        
+    </head>
+    <body>
+        <form name="CalculateInt">
+        
+                P:<input type="text" name="Principle"></br></br>
+                R:<input type="text" name="Rate"></br></br>
+                T:<input type="text" name="Time"></br></br>
+            
+                <input type="button" name="Button" value="Interest" onclick="Interest()"></br></br>
+                I:<input type="text" name="Answer">
+            
+        
+    </form>
+    
+    </body>
+</html>
